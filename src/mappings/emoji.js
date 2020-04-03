@@ -1,3 +1,8 @@
+/**
+ * Mappings
+ *
+ */
+
 export const emojiMapping = {
   1: "VeryUnhappy",
   2: "Unhappy",

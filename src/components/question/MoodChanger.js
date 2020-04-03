@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * Component to change selected emoji mood
+ *
+ */
 const MoodChanger = ({ activeEmojiId, handleEdit }) => {
   return (
     <div className='edit-page-header'>

@@ -2,6 +2,10 @@ import React from "react";
 
 import StarRating from "../../common/StarRating";
 
+/**
+ * Component to of individual question card
+ *
+ */
 class Card extends React.Component {
   constructor() {
     super();

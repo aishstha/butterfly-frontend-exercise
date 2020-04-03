@@ -1,3 +1,8 @@
+/**
+ * Route constant
+ *
+ */
+
 export const HOME = "/";
 
 export const QUESTION = "/demo-question/:id";

@@ -1,8 +1,12 @@
-import React from 'react';
+import React from "react";
 
+/**
+ * Spinner component
+ *
+ */
 const Spinner = () => {
   return (
-    <div className="lds-ripple">
+    <div className='lds-ripple'>
       <div />
       <div />
     </div>

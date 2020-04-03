@@ -8,6 +8,10 @@ import MoodSelection from "./moodSelection";
 
 import * as routes from "../constants/routes";
 
+/**
+ * App router
+ *
+ */
 const Router = () => (
   <BrowserRouter history={history}>
     <Switch>

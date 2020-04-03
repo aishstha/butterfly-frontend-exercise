@@ -12,6 +12,10 @@ import { progressStatus } from "../../mappings/emoji";
 import * as routes from "../../constants/routes";
 import * as question from "../../services/question";
 
+/**
+ * Component to display question cards
+ *
+ */
 class QuestionPage extends React.Component {
   constructor() {
     super();

@@ -2,6 +2,10 @@ import React from "react";
 
 import Footer from "../common/Footer";
 
+/**
+ * Component to display final greeting note
+ *
+ */
 const Greetings = () => {
   return (
     <div className='page-wrap'>

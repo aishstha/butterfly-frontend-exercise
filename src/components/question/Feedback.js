@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * Component to add extra feedback tips
+ *
+ */
 const Feedback = () => {
   return (
     <div className='feedback-comment'>

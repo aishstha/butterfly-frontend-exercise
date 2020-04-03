@@ -4,6 +4,10 @@ import { emojiMapping, messageMapping } from "../../mappings/emoji";
 
 import * as APP_CONSTANT from "../../constants/appConstant";
 
+/**
+ * Component to display emoji mood
+ *
+ */
 const MoodValue = ({ showEditMenu, emojiId, companyName }) => {
   return (
     <div className='page-header'>
