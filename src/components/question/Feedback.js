@@ -1,16 +1,5 @@
 import React from "react";
 
-import {
-  Logo,
-  Happy,
-  Editbutton,
-  VeryUnhappy,
-  Unhappy,
-  Neutral,
-  VeryHappy,
-  VeryHappy3
-} from "../../assets/images";
-
 const Feedback = () => {
   return (
     <div className='feedback-comment'>

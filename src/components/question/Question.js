@@ -146,7 +146,7 @@ class QuestionPage extends React.Component {
                   return (
                     <Card
                       question={question}
-                      index={index}
+                      idx={index}
                       handleProgress={this.handleProgress}
                       stats={this.state.stats}
                       count={this.state.questions.length}
@@ -158,13 +158,13 @@ class QuestionPage extends React.Component {
                 onClick={this.changePath}
                 type='button'
                 className={"send-button"}
-                disabled={this.state.stats.length != 5 ? true : false}
+                disabled={this.state.stats.length === 5 ? false : true}
               >
                 Send
                 <img src={"/images/Arrow.svg"} alt='Arrow' />
               </button>
             </div>
-            <Footer style='pd-6' />
+            <Footer className={"pd-6"} />
           </div>
         </div>
       </div>

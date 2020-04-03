@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Router as BrowserRouter,
-  Switch,
-  Route,
-  Redirect
-} from "react-router-dom";
+import { Router as BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Greetings from "./Greetings";
 import QuestionPage from "./question";

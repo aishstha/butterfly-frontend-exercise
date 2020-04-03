@@ -7,8 +7,8 @@ import Footer from "../common/Footer";
 const Greetings = () => {
   return (
     <div className='page-wrap'>
-      <div class='progress-bar'>
-        <div class='progress-bar__inner' style={{ width: "60%" }}></div>
+      <div className='progress-bar'>
+        <div className='progress-bar__inner' style={{ width: "60%" }}></div>
       </div>
       <div className='side-bar'>
         <img src={Logo} alt='Butterfly' className='Butterfly logo' />
@@ -28,7 +28,7 @@ const Greetings = () => {
             </div>
           </div>
         </div>
-        <Footer style='pd-20' />
+        <Footer className={"pd-20"} />
       </div>
     </div>
   );

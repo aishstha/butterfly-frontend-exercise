@@ -1,14 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import {
-  VeryUnhappy,
-  Unhappy,
-  Neutral,
-  Happy,
-  VeryHappy
-} from "../../assets/images";
-
 import Spinner from "../common/spinner";
 
 import * as info from "../../services/info";
@@ -111,11 +103,11 @@ class MoodSelection extends React.Component {
                 </span>
               </div>
 
-              <div class='wrapper__content__footer'>
-                <div class='wrapper__content__footer__motto'>
+              <div className='wrapper__content__footer'>
+                <div className='wrapper__content__footer__motto'>
                   Butterfly. Your Team's Happiness Manager.
                 </div>
-                <div class='wrapper__content__footer__copy'>
+                <div className='wrapper__content__footer__copy'>
                   Appynest, Inc. - 67 West Street, Suite 414 - Brooklyn, NY
                   11222, USA ©2017 Appynest, Inc. All rights reserved.
                 </div>

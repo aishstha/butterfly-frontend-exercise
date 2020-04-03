@@ -20,7 +20,7 @@ const MoodChanger = ({ activeEmojiId, handleEdit }) => {
             src={VeryUnhappy}
             alt='Edit'
             onClick={() => handleEdit(1)}
-            className={activeEmojiId == 1 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId === 1 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
@@ -28,7 +28,7 @@ const MoodChanger = ({ activeEmojiId, handleEdit }) => {
             src={Unhappy}
             alt='Edit'
             onClick={() => handleEdit(2)}
-            className={activeEmojiId == 2 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId === 2 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
@@ -36,7 +36,7 @@ const MoodChanger = ({ activeEmojiId, handleEdit }) => {
             src={Neutral}
             alt='Edit'
             onClick={() => handleEdit(3)}
-            className={activeEmojiId == 3 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId === 3 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
@@ -44,7 +44,7 @@ const MoodChanger = ({ activeEmojiId, handleEdit }) => {
             src={Happy}
             alt='Edit'
             onClick={() => handleEdit(4)}
-            className={activeEmojiId == 4 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId === 4 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
@@ -52,7 +52,7 @@ const MoodChanger = ({ activeEmojiId, handleEdit }) => {
             src={VeryHappy}
             alt='Edit'
             onClick={() => handleEdit(5)}
-            className={activeEmojiId == 5 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId === 5 && "emoji-shadow cursor-pointer"}
           />
         </div>
       </div>
