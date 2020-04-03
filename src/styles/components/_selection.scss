@@ -20,7 +20,7 @@
       }
 
       > span {
-        font-size: 12px;
+        font-size: $font-size-6;
         color: $teal;
         font-weight: 600;
       }
@@ -40,7 +40,7 @@
       }
 
       &__title {
-        font-size: 12px;
+        font-size: $font-size-6;
         margin-bottom: 15px;
         > strong {
           font-weight: 600;
@@ -67,7 +67,7 @@
 
     &__footer {
       text-align: center;
-      font-size: 12px;
+      font-size: $font-size-6;
       padding: 30px 100px;
       &__motto {
         color: #1b828e;
@@ -75,7 +75,7 @@
         margin: 0 0 10px 0;
       }
       &__copy {
-        font-size: 10px;
+        font-size: $font-size-7;
         color: #fff;
       }
     }
@@ -83,7 +83,7 @@
 }
 
 .title {
-  font-size: 14px;
+  font-size: $font-size-5;
   color: $white;
   font-weight: 600;
 }

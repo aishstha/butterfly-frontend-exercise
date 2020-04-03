@@ -139,7 +139,7 @@ class QuestionPage extends React.Component {
                 companyName={this.state.companyName}
               />
             )}
-            <h3 className='question'>Do you agree with following</h3>
+            <h3 className='question'>Do you agree with following:</h3>
             <div className='page-body'>
               {this.state.questions &&
                 this.state.questions.map((question, index) => {

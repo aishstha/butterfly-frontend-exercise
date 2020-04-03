@@ -22,14 +22,14 @@
   }
 
   &__title {
-    font-size: 18px;
+    font-size: $font-size-3;
     font-weight: $font-medium;
     color: $light-green;
     margin-bottom: 10px;
   }
 
   &__text {
-    font-size: 14px;
+    font-size: $font-size-5;
     color: lighten($gray, 0.8);
     padding: 0px 20px 0 0;
     @include bp-medium {
@@ -39,7 +39,7 @@
 
   &__text-field {
     padding: 18px;
-    font-size: 14px;
+    font-size: $font-size-5;
     height: 110px;
     width: 100%;
     border: 1px solid $dark-grey;

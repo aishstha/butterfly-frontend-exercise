@@ -25,7 +25,7 @@
     }
 
     &__page-number {
-      font-size: 10px;
+      font-size: $font-size-7;
       color: grey;
       @include bp-medium {
         font-size: $font-size-6;
@@ -60,7 +60,7 @@
 
     &__text-field {
       padding: 18px;
-      font-size: 14px;
+      font-size: $font-size-5;
       height: 110px;
       width: 100%;
       border: 1.5px solid $light-grey;
@@ -74,7 +74,7 @@
   }
 
   &__level {
-    font-size: 12px;
+    font-size: $font-size-6;
     color: grey;
   }
 
