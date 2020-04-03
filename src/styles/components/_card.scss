@@ -1,0 +1,84 @@
+.card {
+  position: relative;
+  margin-bottom: 15px;
+  padding: 5px 20px 16px 20px;
+  background-color: $white;
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #fff;
+    position: absolute;
+    top: 16px;
+    left: -8px;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+
+    > div:first-child {
+      padding-right: 16px;
+    }
+
+    &__page-number {
+      font-size: 10px;
+      color: grey;
+      @include bp-medium {
+        font-size: $font-size-6;
+      }
+    }
+
+    &__page-title {
+      font-size: $font-size-5;
+      color: grey;
+      font-weight: $font-medium;
+      margin-bottom: 25px;
+
+      @include bp-medium {
+        font-size: $font-size-3;
+      }
+    }
+  }
+
+  &__comment {
+    &__add-comment {
+      color: $light-green;
+      text-align: center;
+      font-size: $font-size-6;
+      text-decoration: underline;
+      font-weight: $font-normal;
+      cursor: pointer;
+
+      @include bp-medium {
+        font-size: $font-size-5;
+      }
+    }
+
+    &__text-field {
+      padding: 18px;
+      font-size: 14px;
+      height: 110px;
+      width: 100%;
+      border: 1.5px solid $light-grey;
+
+      &:focus {
+        outline: none !important;
+        border: 1.5px solid $light-green;
+        box-shadow: 0 0;
+      }
+    }
+  }
+
+  &__level {
+    font-size: 12px;
+    color: grey;
+  }
+
+  @include bp-medium {
+    max-width: 600px;
+  }
+}

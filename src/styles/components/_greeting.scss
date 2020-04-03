@@ -1,0 +1,57 @@
+.greeting {
+  position: relative;
+  margin-top: 22px;
+  padding: 40px 36px;
+  background-color: $white;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid $white;
+    position: absolute;
+    top: 16px;
+    left: -8px;
+  }
+
+  &__icon {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: $font-medium;
+    color: $light-green;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: lighten($gray, 0.8);
+    padding: 0px 20px 0 0;
+    @include bp-medium {
+      padding: 0px 298px 0 0;
+    }
+  }
+
+  &__text-field {
+    padding: 18px;
+    font-size: 14px;
+    height: 110px;
+    width: 100%;
+    border: 1px solid $dark-grey;
+
+    &:focus {
+      outline: none !important;
+      border: 1.5px solid $light-green;
+      box-shadow: 0 0;
+    }
+  }
+
+  @include bp-medium {
+    max-width: 600px;
+  }
+}

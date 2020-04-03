@@ -1,0 +1,195 @@
+.ratings {
+  height: 42px;
+  border-radius: 21px;
+  border: 3px solid #ededed;
+  background: #f7f7f7;
+  margin: 10px 0 0 0;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 2px;
+  direction: rtl;
+
+  &__item {
+    position: relative;
+    height: 32px;
+    width: 22px;
+    flex-grow: 1;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+
+    &__inner {
+      border-radius: 70%;
+      display: flex;
+      position: absolute;
+      width: 42px;
+      height: 42px;
+      left: 70%;
+      top: -5px;
+      transform: translateX(-70%);
+      display: inline-flex;
+      align-items: center;
+
+      svg {
+        margin: auto;
+        path {
+          fill: #c3c3c3;
+        }
+      }
+    }
+    &.is-selected,
+    &:hover {
+      .ratings__item__inner {
+        z-index: 2;
+        background: #1b828e;
+      }
+    }
+    &.is-selected {
+      pointer-events: none;
+
+      &:not(:last-child) {
+        background: linear-gradient(90deg, #ffdc00 70%, transparent 0);
+      }
+      path {
+        fill: #ffdc00;
+      }
+
+      &[data-value="9"],
+      &[data-value="8"],
+      &[data-value="7"] {
+        background: linear-gradient(90deg, #f98371 70%, transparent 0);
+
+        & ~ div {
+          background: #f98371;
+          path {
+            fill: #fff;
+          }
+        }
+      }
+
+      &[data-value="6"],
+      &[data-value="5"],
+      &[data-value="4"] {
+        background: linear-gradient(90deg, #f7a062 70%, transparent 0);
+
+        & ~ div {
+          background: #f7a062;
+          path {
+            fill: #fff;
+          }
+        }
+      }
+      &[data-value="3"],
+      &[data-value="2"],
+      &[data-value="1"] {
+        background: linear-gradient(90deg, #ffdc00 70%, transparent 0);
+
+        & ~ div {
+          background: #ffdc00;
+          path {
+            fill: #fff;
+          }
+        }
+      }
+    }
+    &:not(.is-selected) {
+      &:hover {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+
+    &:first-child {
+      border-radius: 0 16px 16px 0;
+      margin-left: -5px;
+      .ratings__item__inner {
+        left: auto;
+        right: -5px;
+        transform: none;
+      }
+    }
+    &:last-child {
+      border-radius: 16px 0 0 16px;
+      margin-right: -5px;
+      .ratings__item__inner {
+        left: -5px;
+        right: auto;
+        transform: none;
+      }
+    }
+
+    &[data-value="10"] {
+      &.color {
+        .ratings__item__inner {
+          background: #f98371;
+        }
+      }
+    }
+  }
+
+  &.is-hovering {
+    .ratings__item {
+      &.is-selected {
+        .ratings__item__inner {
+          background: initial;
+        }
+        background: initial;
+        path {
+          fill: #c3c3c3;
+        }
+        & ~ div {
+          background: initial;
+        }
+      }
+
+      &:not(.is-selected) {
+        &[data-value="9"],
+        &[data-value="8"],
+        &[data-value="7"] {
+          &.color {
+            background: linear-gradient(90deg, #f98371 70%, transparent 0);
+
+            & ~ div {
+              background: #f98371;
+              path {
+                fill: #fff;
+              }
+            }
+          }
+        }
+
+        &[data-value="6"],
+        &[data-value="5"],
+        &[data-value="4"] {
+          &.color {
+            background: linear-gradient(90deg, #f7a062 70%, transparent 0);
+
+            & ~ div {
+              background: #f7a062;
+              path {
+                fill: #fff;
+              }
+            }
+          }
+        }
+        &[data-value="3"],
+        &[data-value="2"],
+        &[data-value="1"] {
+          &.color {
+            background: linear-gradient(90deg, #ffdc00 70%, transparent 0);
+
+            & ~ div {
+              background: #ffdc00;
+              path {
+                fill: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

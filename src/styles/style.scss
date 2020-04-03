@@ -1,0 +1,17 @@
+// ==========================================================================
+// Style
+// Import all manifest partials from other folder to this file.
+//
+// ---------------------------------------------------------------------------
+//
+// Scalable and Modular Architecture for CSS (SMACSS)
+// With SMACSS, we divide our styles into fives categories: base, libs, modules, states, and utilities
+// ==========================================================================
+@import "mixins/manifest";
+
+/* Sass Compiled Css Code Start */
+@import "base/manifest";
+@import "helpers/manifest";
+@import "layouts/manifest";
+@import "components/manifest";
+@import "_spinner.scss";

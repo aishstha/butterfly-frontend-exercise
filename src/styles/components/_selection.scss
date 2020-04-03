@@ -1,0 +1,98 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 12px;
+
+  &__content {
+    max-width: 600px;
+    width: 100%;
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin: 0 20px 26px 20px;
+
+      &__logo {
+        display: flex;
+        align-items: flex-end;
+      }
+
+      > span {
+        font-size: 12px;
+        color: $teal;
+        font-weight: 600;
+      }
+    }
+
+    &__body {
+      padding: 12px;
+      background-color: $white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      color: $gray;
+
+      @include bp-medium {
+        padding: 28px 90px 12px 90px;
+      }
+
+      &__title {
+        font-size: 12px;
+        margin-bottom: 15px;
+        > strong {
+          font-weight: 600;
+        }
+      }
+
+      &__question {
+        font-weight: 700;
+        font-size: $font-size-3;
+      }
+
+      &__moods {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 24px;
+      }
+
+      &__footer {
+        background-color: $light-green;
+        color: $white;
+        padding: 2px 4px;
+      }
+    }
+
+    &__footer {
+      text-align: center;
+      font-size: 12px;
+      padding: 30px 100px;
+      &__motto {
+        color: #1b828e;
+        text-align: center;
+        margin: 0 0 10px 0;
+      }
+      &__copy {
+        font-size: 10px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 14px;
+  color: $white;
+  font-weight: 600;
+}
+
+.logo {
+  // max-width: 100%;
+}
+
+.mood-link {
+  display: block;
+  padding: 0px 2px;
+}
