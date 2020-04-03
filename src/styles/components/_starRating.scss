@@ -48,12 +48,18 @@
     }
     &.is-selected {
       pointer-events: none;
+      path {
+        fill: #fff;
+      }
+
+      &:first-child {
+        path {
+          fill: #ffdc00;
+        }
+      }
 
       &:not(:last-child) {
         background: linear-gradient(90deg, #ffdc00 70%, transparent 0);
-      }
-      path {
-        fill: #ffdc00;
       }
 
       &[data-value="9"],
