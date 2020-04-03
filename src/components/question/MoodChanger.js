@@ -1,13 +1,5 @@
 import React from "react";
 
-import {
-  Happy,
-  VeryUnhappy,
-  Unhappy,
-  Neutral,
-  VeryHappy
-} from "../../assets/images";
-
 const MoodChanger = ({ activeEmojiId, handleEdit }) => {
   return (
     <div className='edit-page-header'>
@@ -17,42 +9,42 @@ const MoodChanger = ({ activeEmojiId, handleEdit }) => {
       <div className='edit-page-header__emoji'>
         <div className='edit-page-header__emoji__icon'>
           <img
-            src={VeryUnhappy}
-            alt='Edit'
+            src={"/images/VeryUnhappy.svg"}
+            alt='VeryUnhappy'
             onClick={() => handleEdit(1)}
-            className={activeEmojiId === 1 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId == 1 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
           <img
-            src={Unhappy}
-            alt='Edit'
+            src={"/images/Unhappy.svg"}
+            alt='Unhappy'
             onClick={() => handleEdit(2)}
-            className={activeEmojiId === 2 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId == 2 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
           <img
-            src={Neutral}
-            alt='Edit'
+            src={"/images/Neutral.svg"}
+            alt='Neutral'
             onClick={() => handleEdit(3)}
-            className={activeEmojiId === 3 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId == 3 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
           <img
-            src={Happy}
-            alt='Edit'
+            src={"/images/Happy.svg"}
+            alt='Happy'
             onClick={() => handleEdit(4)}
-            className={activeEmojiId === 4 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId == 4 && "emoji-shadow cursor-pointer"}
           />
         </div>
         <div className='edit-page-header__emoji__icon'>
           <img
-            src={VeryHappy}
-            alt='Edit'
+            src={"/images/Veryhappy.svg"}
+            alt='VeryHappy'
             onClick={() => handleEdit(5)}
-            className={activeEmojiId === 5 && "emoji-shadow cursor-pointer"}
+            className={activeEmojiId == 5 && "emoji-shadow cursor-pointer"}
           />
         </div>
       </div>

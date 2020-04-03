@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ReactComponent as StarIcon } from "../assets/images/ic-star.svg";
+import { ReactComponent as StarIcon } from "../assets/icons/ic-star.svg";
 
 class StarRating extends React.Component {
   constructor(props) {

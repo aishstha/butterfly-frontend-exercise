@@ -11,7 +11,7 @@ const MoodValue = ({ showEditMenu, emojiId, companyName }) => {
         <div className='emoji'>
           <div className='test'>
             <img
-              src={`/images/${emojiMapping[emojiId]}3.svg`}
+              src={`/images/${emojiMapping[emojiId]}large.svg`}
               alt='Emoji'
               className='emoji-shadow'
             />

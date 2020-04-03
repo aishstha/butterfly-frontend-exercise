@@ -146,6 +146,7 @@ class QuestionPage extends React.Component {
                   return (
                     <Card
                       question={question}
+                      key={index}
                       idx={index}
                       handleProgress={this.handleProgress}
                       stats={this.state.stats}
@@ -164,8 +165,8 @@ class QuestionPage extends React.Component {
                 <img src={"/images/Arrow.svg"} alt='Arrow' />
               </button>
             </div>
-            <Footer className={"pd-6"} />
           </div>
+          <Footer className={"pd-6"} />
         </div>
       </div>
     );

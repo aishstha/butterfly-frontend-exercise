@@ -1,14 +1,16 @@
 import React from "react";
 
-import { Logo } from "../assets/images";
-
 import Footer from "../common/Footer";
 
 const Greetings = () => {
   return (
     <div className='page-wrap'>
       <div className='side-bar'>
-        <img src={Logo} alt='Butterfly' className='Butterfly logo' />
+        <img
+          src={"/images/Logo.svg"}
+          alt='Butterfly'
+          className='Butterfly logo'
+        />
       </div>
       <div className='app-content'>
         <div className='content'>
