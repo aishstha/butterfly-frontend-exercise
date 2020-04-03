@@ -27,9 +27,3 @@ $ cp .env.example .env
 ```bash
 $ yarn start
 ```
-
-## Building for Production
-
-```bash
-$ yarn build
-```
