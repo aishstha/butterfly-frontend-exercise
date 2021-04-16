@@ -1,4 +1,4 @@
-# butterfly-frontend-exercise
+# butterfly exercise frontend setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
@@ -10,10 +10,15 @@ First clone this repository.
 $ git clone git@github.com:aishwarya4shrestha/butterfly-frontend-exercise.git
 ```
 
-Install dependencies. Make sure you already have `nodejs`, `npm` and `yarn` installed in your system.
+Install dependencies. Make sure you already have `nodejs`, (`npm` or `yarn`) installed in your system.
 
 ```bash
-$ yarn
+$ yarn 
+```
+or
+
+```bash
+$ npm install 
 ```
 
 Create a `.env` file for environment variables.
@@ -26,4 +31,9 @@ $ cp .env.example .env
 
 ```bash
 $ yarn start
+```
+or
+
+```bash
+$ npm run start
 ```
